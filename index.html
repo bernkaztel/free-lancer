@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Es la clave del idioma en el que estará la página web-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Se sincroniza el archivo css-->
+    <link href="css/style.css" rel="stylesheet"  type="text/css">
+    <!--Se colocan las fuentes-->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
+      <!--Se coloca el link de los icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--El título de la web page-->
+    <title>Freelancer</title>
+    <nav> 
+        <!--Se crea el container de la barra de navegación -->
+            <div id="nav-bar">
+                <!--Dentro de ese container se coloca un container que contendrá el nombre de la marca-->
+                <div id="brand-name"><a href="#">START BOOTSTRAP</a></div>
+                <!--Dentro de ese mismo container estará otro container que contendrá la barra de navegación-->
+                <div id="nav-menu">
+                    <!--Dentro de la barra de navegación está la pestaña de portafolio-->
+                    <div id="portafolio"><a href="#portfolio">PORTFOLIO</a></div>
+                    <!--Dentro de la barra de navegación está la pestaña de about-->
+                    <div id="aboutnav"><a href="#about">ABOUT</a></div>
+                    <!--Dentro de la barra de navegación está la pestaña de contact me-->
+                    <div id="contact"><a href="#contact-me">CONTACT</a></div>
+                </div>
+            </div>
+    </nav>
+</head>
+
+<body>
+    <!--Dentro del body se encuentra el contenedor de todo el contenido del body-->
+    <div class="body-container">
+        <!--La primera box de la página recibe el nombre de banner-->
+        <div id="banner">
+            <!--Dentro del banner se encuentra la imagen profile.png-->
+            <div id="profile-img"><img src="assets/images/profile.png" alt="Imagen no disponible" height="230px"></div>
+           <!--Dentro del banner se encuentra el título-->
+            <div id="largest-text">START BOOTSTRAP</div>
+            <!--Dentro del banner se encuentra también la estrella (blanca) que enmarca el contenido-->
+            <br><div class="star-white">&#9644&#9644 <i class="fa fa-star" aria-hidden="true"> &#9644&#9644</i></div><br>      
+            <!--Dentro del banner se encuentra el subtítulo-->      
+            Web Developer-Graphic Artist-User Experience Designer</div>
+        <!--La segunda box recibe el nombre de portafolio-->
+        <div id="portfolio">
+            <!--Dentro del portafolio se encuentra el container del título-->
+            <div class="larger-text">PORTFOLIO</div>
+            <!--Dentro del portafolio se encuentra la estrella (negra) que enmarca el título-->
+            <br> <div class="star">&#9644&#9644 <i class="fa fa-star" aria-hidden="true"> &#9644&#9644</i></div><br>
+             <!--Dentro del portafolio se encuentra el contenedor de la grid que lleva las imágenes -->
+            <div id="grid-portfolio">
+                <!--Cada imagen va dentro de un contenedor -->
+                <div class="pic-container">
+                    <!--Va primero la imagen general-->
+                    <div class='imga'><img src="assets/images/portfolio/cabin.png" alt="Imagen no disponible" height="230px" width="315px"></div>
+                     <!--Después va el hover-->
+                    <div class='imgh'><img src="assets/images/portfolio/hoover.png" alt="Imagen no disponible" height="230px" width="315px"></div>
+                </div>
+                <div class="pic-container">
+                    <div class='imga'><img src="assets/images/portfolio/cake.png" alt="Imagen no disponible" height="230px" width="315px"></div>
+                    <div class='imgh'><img src="assets/images/portfolio/hoover.png" alt="Imagen no disponible" height="230px" width="315px"></div>
+                </div>
+                <div class="pic-container">
+                    <div class='imga'><img src="assets/images/portfolio/circus.png" alt="Imagen no disponible" height="230px" width="315px"></div>
+                    <div class='imgh'><img src="assets/images/portfolio/hoover.png" alt="Imagen no disponible" height="230px" width="315px"></div>
+                </div>
+                <div class="pic-container">
+                    <div class='imga'><img src="assets/images/portfolio/game.png" alt="Imagen no disponible" height="230px" width="315px"></div>
+                    <div class='imgh'><img src="assets/images/portfolio/hoover.png" alt="Imagen no disponible" height="230px" width="315px"></div>
+                </div>
+                <div class="pic-container">
+                    <div class='imga'><img src="assets/images/portfolio/safe.png" alt="Imagen no disponible" height="230px" width="315px"></div>
+                    <div class='imgh'><img src="assets/images/portfolio/hoover.png" alt="Imagen no disponible" height="230px" width="315px"></div>
+                </div>
+                <div class="pic-container">
+                    <div class='imga'><img src="assets/images/portfolio/submarine.png" alt="Imagen no disponible" height="230px" width="315px"></div>
+                    <div class='imgh'><img src="assets/images/portfolio/hoover.png" alt="Imagen no disponible" height="230px" width="315px"></div>
+                </div>
+                
+            </div>
+        </div>
+        <!--La tercera box recibe el nombre de about-->
+        <div id="about"> 
+            <!--Dentro del container se encuentra el container del título-->
+            <div class="larger-text-white">ABOUT</div>
+            <!--Dentro del container se encuentra la estrella (blanca) que enmarca el título-->
+            <div class="star-white">&#9644&#9644 <i class="fa fa-star" aria-hidden="true"></i> &#9644&#9644</div><br>
+            <!--Dentro del container se encuentra el texto dividido en dos columnas-->
+            <div class="grid-text-container">
+                <!--Dentro del container del texto se divide en dos columnas, con la misma clase-->
+                <div class="textbox">Freelancer is a free bootstrap theme create by Start Bootstrap. The download
+                includes the complete source files including HTML, CSS and JavaScript as well as option LESS
+                stylesheets for easy customization. </div>
+                <div class="textbox">Wether you're a stuent looking to showcase your work, a professional looking
+                    to attract clients or a graphic artist looking to share your projects, this template is the 
+                    perfect starting point! </div>
+            </div>
+            <!--Dentro del container de la tercera caja se encuentra el botón de decarga-->
+            <div id="button-download"><a href="#"><i class="fa fa-download"></i> Download Theme</a></div>
+        </div>
+        <!--La cuarta box recibe el nombre de contact me-->
+        <div id="contact-me">
+            <!--Dentro del container se encuentra el container del título-->
+            <div class="larger-text">CONTACT ME</div>
+            <!--Dentro del container se encuentra la estrella (negra) que enmarca el título-->
+            <br> <div class="star">&#9644&#9644 <i class="fa fa-star" aria-hidden="true"></i> &#9644&#9644</div><br>
+            <!--Dentro del container se encuentra el container de las formas de input-->
+            <div class="input-contact">Name<br><Input type="text"></div>
+            <div class="input-contact">Email Adress<br><Input type="text"></div>
+            <div class="input-contact">Phone Number<br><Input type="number"></div>
+            <div class="input-contact">Message<br><Input type="text"></div>
+            <!--Dentro del container se encuentra el botón de enviar-->
+            <div id="button-send"><div class="sendtext"><a href="#"> Send </a></div> </div>
+        </div>
+    </div>
+        <!--Dentro del container del body se encuentra el footer-->
+        <footer>
+            <!--Al interior del footer se encuentra su container-->
+            <div id="footer-container">
+                 <!--Dentro del container se encuentran las tres columnas del footer, location, around the web y about freelancer-->
+                <div class="footertext" id="location"><div class="larger-text-footer">LOCATION</div> 3481 Melrose Place <br>Beverly Hills, CA 90210</div>
+                <div class="footertext" id="around-web"><div class="larger-text-footer">AROUND THE WEB
+                </div>   
+                 <!--Dentro del footer se crea el containr de los íconos-->
+                    <div id="iconsets">
+                         <!--Se adjuntan los íconos como links-->
+                        <div class="icon-circle"><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+                        <div class="icon-circle"><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+                        <div class="icon-circle"><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                        <div class="icon-circle"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+                    </div>
+                </div>
+                 <!--Al interior del footer se encuentra la última columna del mismo-->
+                <div class="footertext" id="location"><div class="larger-text-footer">ABOUT FREELANCER</div>Freelance is a free to use, open source Bootstrap theme created by <div id="link-boot"><a href="#">Start Bootstrap</a></div></div>
+                <!--La última columna centrada del copyright-->
+                <div id="copyright">Copyright YourWebsite 2017 </div>
+            </div>
+        </footer>    
+</body>
+</html>

@@ -1,0 +1,333 @@
+
+/* Se quita el margen y el padding a head */
+head { 
+width: 100%;
+margin: 0;   
+padding: 0;
+}
+
+/*Se establece la barra de navegación con un grid de dos columnas*/
+#nav-bar {
+position: fixed;
+width: 100%;
+height: 80px;
+display: grid;
+grid-template-columns: 2;
+grid-template-columns: 870px auto;
+background-color: #2C3E50;
+color:white;
+font-family: 'Montserrat', sans-serif;
+}
+
+/*Se desactivan las configuraciones default de a */
+a {
+    color: inherit; 
+    text-decoration: inherit; 
+}
+
+/*Se configura el nombre de BootStrap*/
+#brand-name {
+font-weight: bold;
+font-size: 25px;
+padding-left: 220px;
+padding-top: 25px;
+}
+
+/* Se utiliza otro grid para definir el menú de navegacion*/
+#nav-menu {
+display: grid;
+grid-template-columns: 3;
+grid-template-columns: 100px 100px 100px;
+font-size: 13px;
+padding-top: 35px;
+font-weight: bold;
+text-align: center;
+}
+/* Se le coloca un hover al menu para que se vea azul al pasar el mouse*/
+#nav-menu :hover {
+color: #18BC9C ;
+}
+
+
+/*Se quita el margin y el padding al body, se establec el tipo de letra*/
+body{
+width: 100%;
+margin: 0;   
+padding: 0;
+font-family: 'Montserrat', sans-serif;
+}
+
+/*Se coloca un grid en el container donde van a ir las boxes*/
+ .body-container{ 
+padding-top: 80px;
+display: grid;
+grid-template-rows: 4; 
+grid-template-rows: 630px 790px 520px 800px;
+ }
+
+ /*Se configura el box 1-banner*/
+ #banner {
+background-color: #18BC9C;
+color: white;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;
+font-weight: 100;
+ }
+
+/*Se coloca la imagen profile*/
+#profile-img { 
+padding-top: 80px;
+}
+
+/*Configuración de la star(black)*/
+.star {
+font-size: 30px; 
+padding-top: 20px;
+text-align: center;
+line-height: 1px;
+color: #2C3E50
+}
+
+/*Configuración de la star (white)*/
+.star-white {
+color: white;
+font-size: 30px; 
+padding-top: 20px;
+text-align: center;
+line-height: 1px;
+padding-bottom: 20px;
+}
+
+/*Configuración del título de portafolio*/
+#largest-text {
+font-size: 60px;
+font-family: 'Lato', sans-serif;
+font-weight: bold;
+padding-top: 50px;
+line-height: 30px;
+margin-top: 0;
+}
+
+/*Configuración del título grande de portafolio*/
+.larger-text {
+font-size: 40px;
+font-family: 'Lato', sans-serif;
+font-weight: bold;
+text-align: center;
+padding-top: 80px;
+line-height: 10px;
+}
+
+/*Creación del grid que contendrá a las imágenes del portafolio*/
+#grid-portfolio {
+padding-top: 40px;
+display: grid;
+grid-template-columns: 3;
+grid-template-rows: 2;
+grid-template-columns: 320px 320px 320px;
+grid-template-rows: 230px 230px 230px;
+grid-column-gap: 30px;
+grid-row-gap: 30px;
+justify-content: center;
+}
+
+.imga img {
+display: block;
+}
+  
+.imga:hover + .imgh {
+display:block;
+}
+  
+.imgh {
+position: relative;
+top: -230px;
+display:none;
+}
+
+
+/*Se configura la tercera box, about*/
+#about {
+background-color: #18BC9C;
+}
+
+/*Se configura el texto del título*/
+.larger-text-white {
+font-size: 40px;
+font-family: 'Lato', sans-serif;
+font-weight: bold;
+text-align: center;
+padding-top: 70px;
+padding-bottom: 20px;
+color: white;
+line-height: 1px;
+}
+
+/*Se declara el grid en el que irá el texto en dos columnas*/
+.grid-text-container {
+display: grid;
+grid-template-columns: 2;
+grid-template-columns: 300px 300px;
+justify-content: center;
+grid-column-gap: 30px;
+}
+
+/*Se configuran los cuadros de texto*/
+.textbox{
+color: white;
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+line-height: 25px;
+}
+
+/*Se configura el botón de download*/
+#button-download {
+border: solid 3px white;
+color: white;
+width: 160px;
+height: 30px;
+background-color: transparent;
+margin: 0 auto;
+margin-top: 40px;
+display: block;
+border-radius: 5px;
+font-size: 15px;
+padding-top: 8px;
+}
+
+/*Hover del botón de download */
+#button-download:hover{
+color: #18BC9C;
+background-color: white;
+}
+
+/*Se centra el título de la última box*/
+#contact-me {
+margin: 0 auto;
+}
+
+/*Se configuran los títulos de las fórmulas de contacto*/
+.input-contact {
+color: rgb(145, 145, 145);
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+line-height: 30px;
+font-weight: bold;
+padding-top: 50px;
+}
+
+/*Se configuran las fórmulas de contacto*/
+input[type="text"] {
+margin: 0 auto;
+display: block;
+width: 600px;
+border: none;
+border-bottom: 1px solid rgb(223, 223, 223);
+color: rgb(196, 196, 196);
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+text-justify: center;
+}
+
+/*Se configuran las fórmulas de contacto*/
+input[type="number"] {
+    margin: 0 auto;
+    display: block;
+    width: 600px;
+    border: none;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    color: rgb(196, 196, 196);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-justify: center;
+    }
+
+/*Se coloca padding al botón de send*/
+.sendtext{ 
+padding: 11px;
+}
+
+/*Se configura el botón de send*/
+#button-send {
+height:40px;
+font-weight: bold;
+font-size: 15px;
+width:70px;
+background-color: #18BC9C;
+border: 2px solid;
+border-radius: 5px;
+color:white;
+margin-top: 40px;
+}
+
+/*Se coloca un hover al botón de send*/
+#buton-send :hover{
+background-color: rgb(17, 121, 100);
+}
+
+/*Se configura el footer y se declara el grid que lo contenerá*/
+#footer-container {
+background-color: #2C3E50;
+width: 100%;
+height: 320px;
+color:white;
+display: grid;
+grid-template-columns: 3;
+grid-template-rows: 2;
+grid-template-columns: 280px 280px 280px;
+grid-template-rows: 170px 150px;
+justify-content: center;
+justify-items: center;
+padding-top:50px;
+}
+
+/*Se configura el footr de copyright*/
+#copyright { 
+grid-column: 1/4;
+padding-top: 70px;
+justify-self: bottom;
+align-self: bottom;
+font-size: 14px;
+font-family: 'Lato', sans-serif;
+}
+
+/*Se configura el texto estándar del footer*/
+.footertext {
+text-align: center;
+font-size: 15px;
+font-family: 'Lato', sans-serif;
+line-height: 25px;
+}
+
+/*Se configura el texto grande del footr*/
+.larger-text-footer {
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    font-stretch: expanded;
+    margin-bottom: 30px;
+    }
+ 
+/*Se configuran los círculos alrededor de los íconos*/
+.icon-circle {
+margin-left:10px;
+width: 30px;
+height: 30px;
+border: 1px solid white;
+border-radius: 50%;
+display: inline-block
+}
+
+/*Se coloca el hoover a los círculos alrededor de los íconos*/
+.icon-circle:hover {
+background-color:  white;
+color: #18BC9C
+}
+
+/*Se configura el link a bootstrap*/
+#link-boot{
+color:#18BC9C
+}
